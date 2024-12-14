@@ -26,9 +26,6 @@ import com.melasdelivery.models.Customer;
 
 
 
-public class CustomerController {
 
-
-}
 
     
