@@ -2,6 +2,8 @@ package com.example.mealsdelivery.Controllers;
 import com.melasdelivery.services.CustomerService;
 import com.melasdelivery.models.Customer;
 
+//new line this
+
 @RestController
     @RequestMapping("/customers")
     public class CustomerController{
@@ -26,8 +28,9 @@ import com.melasdelivery.models.Customer;
         customerService.deleteCustomer(id);
         return "Customer with ID " + id + " has been deleted.";
     }
+}
     
-
+    
 
 
 
