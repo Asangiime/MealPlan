@@ -17,6 +17,10 @@ import com.melasdelivery.models.Customer;
             public Customer updateCustomer(@PathVariable String id, @RequestBody Customer customer){
                 return customerService.updateCustomer(id, customer);
             }
+         @DeleteMapping("/{id}")
+    public String deleteCustomer(@PathVariable String id) {
+        customerService.deleteCustomer(id);
+        return "Customer with ID " + id + " has been deleted.";
     }
     
 
