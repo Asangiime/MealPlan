@@ -8,6 +8,10 @@ import com.melasdelivery.models.Customer;
 
         @Autowired
             private CustomerService customerService;
+        @PostMapping
+    public Customer createCustomer(@RequestBody Customer customer) {
+        return customerService.addCustomer(customer);
+    }
 
         @GetMapping("/{id}")
             public Optional<Customer> getCustomer(@PathVariable String id){
