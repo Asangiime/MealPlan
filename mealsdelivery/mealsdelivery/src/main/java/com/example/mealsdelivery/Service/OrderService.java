@@ -1,10 +1,10 @@
-package Service;
+package com.example.mealsdelivery.Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import Repository.OrderRepository;
-import models.Order;
+import com.example.mealsdelivery.Repository.OrderRepository;
+import com.example.mealsdelivery.models.Order;
 
 import java.util.List;
 import java.util.Optional;
