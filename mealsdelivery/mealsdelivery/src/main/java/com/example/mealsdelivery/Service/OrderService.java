@@ -1,5 +1,6 @@
 package com.example.mealsdelivery.Service;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +16,7 @@ public class OrderService {
     private final OrderRepository orderRepository;
 
     @Autowired
+
     public OrderService(OrderRepository orderRepository) {
         this.orderRepository = orderRepository;
     }
@@ -36,9 +38,14 @@ public class OrderService {
     }
 
     public Order updateOrder(String id, Order order) {
+        if (orderRepository.existsById(id)) {
         order.setId(id);
         return orderRepository.save(order);
     }
+    else {
+        throw new IllegalArgumentException("Order with ID " + id + " does not exist.");
+    }
+}
 
     public void deleteOrder(String id) {
         orderRepository.deleteById(id);
