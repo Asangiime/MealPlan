@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.mealsdelivery.Service.CustomerService;
 import com.example.mealsdelivery.models.Customer;
 
+//new line this
+
 @RestController
     @RequestMapping("/customers")
     public class CustomerController{
@@ -39,8 +41,6 @@ import com.example.mealsdelivery.models.Customer;
         customerService.deleteCustomer(id);
         return "Customer with ID " + id + " has been deleted.";
     }}
-    
-
 
 
 
