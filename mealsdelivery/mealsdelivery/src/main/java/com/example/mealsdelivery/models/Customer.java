@@ -3,7 +3,7 @@ package com.example.mealsdelivery.models;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.annotation.Id;
 
-//sandu
+//sandupama
 
 @Document(collection = "customers")
 public class Customer {
