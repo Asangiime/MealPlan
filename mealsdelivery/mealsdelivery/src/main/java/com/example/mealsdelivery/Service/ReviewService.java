@@ -1,4 +1,4 @@
-package Service;
+package com.example.mealsdelivery.Service;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,9 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-
-import Repository.ReviewRepository;
-import models.Review;
+import com.example.mealsdelivery.Repository.ReviewRepository;
+import com.example.mealsdelivery.models.Review;
 
 @Service
 public class ReviewService {

@@ -1,19 +1,18 @@
-package Service;
+package com.example.mealsdelivery.Service;
 
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import Repository.CustomerRepository;
-import models.Customer;
+import com.example.mealsdelivery.Repository.CustomerRepository;
+import com.example.mealsdelivery.models.Customer;
 
 @Service
 public class CustomerService {
 
     private final CustomerRepository customerRepository;
-
-    @Autowired
+     @Autowired
     public CustomerService(CustomerRepository customerRepository) {
         this.customerRepository = customerRepository;
     }

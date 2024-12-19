@@ -1,4 +1,4 @@
-package Service;
+package com.example.mealsdelivery.Service;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,8 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import Repository.MealRepository;
-import models.Meal;
+import com.example.mealsdelivery.Repository.MealRepository;
+import com.example.mealsdelivery.models.Meal;
 
 @Service
 public class MealService {
