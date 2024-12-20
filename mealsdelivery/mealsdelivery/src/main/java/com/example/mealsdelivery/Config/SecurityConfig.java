@@ -1,4 +1,4 @@
-package main.java.Config;
+package main.java.com.example.mealsdelivery.Config;
 
 import com.mealdelivery.services.AdminService;
 import org.springframework.context.annotation.Bean;
