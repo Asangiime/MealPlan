@@ -1,0 +1,14 @@
+.auth-buttons .auth-btn {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: red;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .auth-buttons .auth-btn:hover {
+    background-color: yellowgreen;
+  }
+  
