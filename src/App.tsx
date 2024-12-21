@@ -1,38 +1,36 @@
-import React, { Component } from "react";
-import "./App.css";
-import Navbar from "./Components/Navbar";
-import SearchBar from "./Components/SearchBar";
-import CategoryButtons from "./Components/CategoryButtons";
-import AuthButtons from "./Components/AuthButtons";
-import LoginPage from "./Pages/LoginPage";
-import Signup from "./Pages/SignupPage";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React from 'react';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import Header from './component/Header';
+import Footer from './component/Footer';
+import './index.css';
+import Vegan from './pages/vegan';
+import Vegetarian from './pages/vegetarian';
+import Pescatarian from './pages/pescatarian';
 
 const App: React.FC = () => {
   return (
+    <BrowserRouter>
+      <div className="app">
+        <Header />
+        <main>
+          <h1>Meal Planner</h1>
+          <p>Select your preferred meal type:</p>
+          <ul>
+            <li><Link to="/vegan">Vegan</Link></li>
+            <li><Link to="/vegetarian">Vegetarian</Link></li>
+            <li><Link to="/pescatarian">Pescatarian</Link></li>
+          </ul>
 
-<div className="app-container">
-      <Navbar />
-      <div className="main-content">
-        <h1>Wellness begins with every bite.</h1>
-        <SearchBar />
-        <CategoryButtons />
-        <AuthButtons />
-        <Router>
-<Routes>
-  <Route path="/" element={<Component />} />
-  <Route path="/LoginPage" element={<LoginPage />} />
-  <Route path="/SignupPage" element={<Signup />} />
-</Routes>
-</Router>
+          <Routes>
+            <Route path="/vegan" element={<Vegan />} />
+            <Route path="/vegetarian" element={<Vegetarian />} />
+            <Route path="/pescatarian" element={<Pescatarian />} />
+          </Routes>
+        </main>
+        <Footer />
       </div>
-      <footer className="footer">© 2024 Meal Planner. All rights reserved.</footer>
-    </div>
-
-
+    </BrowserRouter>
   );
-
-  
 };
 
 export default App;
