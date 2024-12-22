@@ -1,0 +1,21 @@
+.signup {
+    padding: 2rem;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .signup input {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    width: 100%;
+  }
+  
+  .signup button {
+    padding: 0.5rem 1rem;
+    background-color:#4bae74;
+    color: rgb(236, 243, 245);
+    border: none;
+    cursor: pointer;
+  }

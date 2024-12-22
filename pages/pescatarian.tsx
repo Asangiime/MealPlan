@@ -1,12 +1,11 @@
 import React from 'react';
+import './Pescatarian.css';
 
-import './pescatarian.css';  
-const Pescatarian: React.FC = () => {
+const Pescatarian = () => {
   return (
-    <div>
-      <h2>Pescatarian Menu</h2>
-      <p>Delight in our pescatarian meal selections.</p>
-      {/* Add more pescatarian meal details here */}
+    <div className="pescatarian">
+      <h2>Pescatarian Recipes</h2>
+      <p>Discover amazing pescatarian meal ideas!</p>
     </div>
   );
 };

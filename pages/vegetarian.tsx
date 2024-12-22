@@ -1,13 +1,11 @@
 import React from 'react';
+import './Vegetarian.css';
 
-import './vegetarian.css';  // For Vegetarian page
-
-const Vegetarian : React.FC = () => {
+const Vegetarian = () => {
   return (
-    <div>
-      <h2>Vegetarian Menu</h2>
-      <p>Enjoy our variety of vegetarian meals.</p>
-      {/* Add more vegetarian meal details here */}
+    <div className="vegetarian">
+      <h2>Vegetarian Recipes</h2>
+      <p>Explore our collection of delicious vegetarian recipes!</p>
     </div>
   );
 };

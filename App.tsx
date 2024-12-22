@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './component/Navbar';
 import LogIn from './pages/LogIn';
 import SignUp from './pages/SignUp';
-import Vegetarian from './pages/Vegetarian';
-import Vegan from './ages/Vegan';
-import Pescatarian from './ages/Pescatarian';
+import Vegetarian from './pages/vegetarian';
+import Vegan from './pages/vegan';
+import Pescatarian from './pages/pescatarian';
 
 const App = () => {
   return (

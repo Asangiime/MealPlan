@@ -1,11 +1,11 @@
 import React from 'react';
-import './vegan.css';  
-const Vegan : React.FC = () => {
+import './Vegan.css';
+
+const Vegan = () => {
   return (
-    <div>
-      <h2>Vegan Menu</h2>
-      <p>Explore our delicious vegan meal options.</p>
-      {/* Add more vegan meal details here */}
+    <div className="vegan">
+      <h2>Vegan Recipes</h2>
+      <p>Find healthy and tasty vegan recipes here!</p>
     </div>
   );
 };
