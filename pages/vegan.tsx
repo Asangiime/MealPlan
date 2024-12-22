@@ -9,8 +9,8 @@ const Vegan = () => {
   ];
 
   return (
-    <div className="vegetarian">
-      <h2>Vegetarian Recipes</h2>
+    <div className="vegan">
+      <h2>Vegan Recipes</h2>
       <ul>
         {recipes.map((recipe) => (
           <li key={recipe.id}>{recipe.name}</li>
@@ -20,4 +20,4 @@ const Vegan = () => {
   );
 };
 
-export default Vegetarian;
+export default vegan;
