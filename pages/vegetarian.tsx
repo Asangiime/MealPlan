@@ -5,7 +5,7 @@ const Vegetarian = () => {
   const recipes = [
     { id: 1, name: "Vegetarian Pasta" },
     { id: 2, name: "Grilled Veggie Sandwich" },
-    { id: 3, name: "Vegetable Stir Fry" },
+    { id: 3, name: "Vegetable Fry" },
   ];
 
   return (
