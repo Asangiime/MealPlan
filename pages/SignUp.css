@@ -15,7 +15,7 @@
   .signup button {
     padding: 0.5rem 1rem;
     background-color:#14532e;
-    color: white;
+    color: rgb(236, 243, 245);
     border: none;
     cursor: pointer;
   }
