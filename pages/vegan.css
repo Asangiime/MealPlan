@@ -1,14 +1,8 @@
 .vegan {
-    background-color: #eaf0f1;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 20px;
-  }
-  
-  .vegan h2 {
-    color: #27ae60;
-  }
-  
-  .vegan p {
-    color: #2c3e50;
-  }
+  padding: 2rem;
+  text-align: center;
+}
+
+.vegan p {
+  font-size: 1.2rem;
+}
