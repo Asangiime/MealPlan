@@ -1,9 +1,19 @@
-import React from 'react';
-import './LogIn.css';
+import React, { useState } from 'react';
+import AuthButton from '../component/AuthButtons';
 
 const LogIn = () => {
+  const [loading, setLoading] = useState(false);
+
+  const handleLogin = () => {
+    setLoading(true);
+    setTimeout(() => {
+      alert('Logged in successfully!');
+      setLoading(false);
+    }, 2000); // Simulate a 2-second delay
+  };
+
   return (
-    <div className="login">
+    <div>
       <h2>Log In</h2>
       <form>
         <label>
@@ -14,7 +24,11 @@ const LogIn = () => {
           Password:
           <input type="password" placeholder="Enter your password" />
         </label>
-        <button type="submit">Log In</button>
+        <AuthButton
+          label={loading ? 'Logging in...' : 'Log In'}
+          onClick={handleLogin}
+          disabled={loading}
+        />
       </form>
     </div>
   );
