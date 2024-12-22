@@ -20,4 +20,4 @@ const Vegan = () => {
   );
 };
 
-export default vegan;
+export default Vegan;

@@ -7,7 +7,7 @@ const LogIn = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert(Logged in with email: ${email});
+    alert('Logged in with email: ${email}');
   };
 
   return (
