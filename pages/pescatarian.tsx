@@ -5,7 +5,7 @@ const Pescatarian = () => {
   const recipes = [
     { id: 1, name: " Pasta" },
     { id: 2, name: " Sandwich" },
-    { id: 3, name: "Vegetable Stir Fry" },
+    { id: 3, name: "chicken Fry" },
   ];
 
   return (
