@@ -3,7 +3,6 @@ package com.example.mealsdelivery.Service;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.mealsdelivery.Repository.MealRepository;
@@ -13,10 +12,10 @@ import com.example.mealsdelivery.models.Meal;
 public class MealService {
     private final MealRepository mealRepository;
 
-    @Autowired
     public MealService(MealRepository mealRepository) {
         this.mealRepository = mealRepository;
     }
+
 
     public List<Meal> getAllMeals() {
         return mealRepository.findAll();
