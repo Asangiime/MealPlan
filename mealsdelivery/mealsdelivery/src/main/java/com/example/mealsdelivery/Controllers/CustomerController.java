@@ -1,5 +1,6 @@
 package com.example.mealsdelivery.Controllers;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,11 +24,15 @@ import com.example.mealsdelivery.models.Customer;
 
         @Autowired
             private CustomerService customerService;
-        @PostMapping
+        @PostMapping("/create")
     public Customer createCustomer(@RequestBody Customer customer) {
-        return customerService.createCustomer(customer);
+            return customerService.createCustomer(customer);
     }
 
+    @GetMapping
+    public List<Customer> getAllCustomers() {
+        return customerService.getAllCustomers();
+    }
         @GetMapping("/{id}")
             public Optional<Customer> getCustomer(@PathVariable String id){
                 return customerService.getCustomerById(id);

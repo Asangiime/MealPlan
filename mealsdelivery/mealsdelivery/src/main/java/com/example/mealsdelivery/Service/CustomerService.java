@@ -1,8 +1,8 @@
 package com.example.mealsdelivery.Service;
 
+import java.util.List;
 import java.util.Optional;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.mealsdelivery.Repository.CustomerRepository;
@@ -12,7 +12,6 @@ import com.example.mealsdelivery.models.Customer;
 public class CustomerService {
 
     private final CustomerRepository customerRepository;
-     @Autowired
     public CustomerService(CustomerRepository customerRepository) {
         this.customerRepository = customerRepository;
     }
@@ -32,6 +31,12 @@ public class CustomerService {
 
     public void deleteCustomer(String id) {
         customerRepository.deleteById(id);
+    }
+
+
+    // Retrieve all customers
+    public List<Customer> getAllCustomers() {
+        return customerRepository.findAll();
     }
 }
 
