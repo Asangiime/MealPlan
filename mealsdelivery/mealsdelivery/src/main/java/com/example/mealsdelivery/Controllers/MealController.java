@@ -5,6 +5,8 @@ import com.example.mealsdelivery.models.Meal;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/meals")
 public class MealController {
@@ -12,15 +14,15 @@ public class MealController {
     private MealService mealService;
 
     // Save a meal to the database
-    @PostMapping
+    @PostMapping("/save")
     public Meal saveMeal(@RequestBody Meal meal) {
         return mealService.saveMeal(meal);
     }
 
-    @GetMapping
-    public String listMeals() {
-        // Logic to list meals
-        return "List of meals";
+    @GetMapping("/get")
+    public List<Meal> getAllMeals() {
+        return mealService.getAllMeals();
+
     }
 
     @GetMapping("/{id}")
