@@ -24,9 +24,9 @@ public class OrderController {
         return orderService.getOrderById(id);
     }
 
-    @GetMapping("/{id}")
-    public List<Order> getOrdersByCustomerId(@PathVariable String id) {
-        return orderService.getOrdersByCustomerId(id);
+    @GetMapping("/customers/{customerId}")
+    public List<Order> getOrdersByCustomerId(@PathVariable String customerId) {
+        return orderService.getOrdersByCustomerId(customerId);
     }
 
     @GetMapping("/get")
