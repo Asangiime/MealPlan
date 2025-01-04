@@ -1,21 +1,56 @@
 package com.example.mealsdelivery.Controllers;
 
 
+import com.example.mealsdelivery.Service.ReviewService;
+import com.example.mealsdelivery.models.Customer;
+import com.example.mealsdelivery.models.Review;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/reviews")
 public class ReviewController {
 
-    @PostMapping
-    public String addReview(@RequestBody String review) {
-        // Logic for adding a review
-        return "Review added";
+    @Autowired
+    private ReviewService reviewService;
+
+    @PostMapping("/create")
+    public Review addReview(@RequestBody Review review) {
+        return reviewService.addReview(review);
     }
 
-    @GetMapping("/{mealId}")
-    public String listReviews(@PathVariable String mealId) {
-        // Logic for listing reviews for a meal
-        return "Reviews for meal " + mealId;
+    @GetMapping("/{id}")
+    public Optional<Review> getReviewById(@PathVariable String id) {
+        return reviewService.getReviewById(id);
     }
+
+
+    @GetMapping("/{mealId}")
+    public List<Review> getReviewsByMealId(@PathVariable String mealId) {
+        return reviewService.getReviewsByMealId(mealId);
+    }
+
+    @GetMapping("/get")
+    public List<Review> getAllReviews() {
+        return reviewService.getAllReviews();
+    }
+
+
+
+    @PutMapping("/{id}")
+    public Review updateReview(@PathVariable String id, @RequestBody Review review){
+        return reviewService.updateReview(id,review);
+    }
+
+    @DeleteMapping("/{id}")
+    public String deleteReview(@PathVariable String id) {
+        reviewService.deleteReview(id);
+        return "Review with ID " + id + " has been deleted.";
+    }
+
+
+
 } 
