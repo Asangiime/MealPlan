@@ -1,25 +1,25 @@
 package com.example.mealsdelivery.models;
 
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import jakarta.persistence.Id;
+
 
 @Document(collection = "orders")
 public class Order {
+    @Getter
     @Id
     private String id;
-    private String customerId;       // Reference to Customer
-    private String mealId;            // Reference to Meal
-    private double totalAmount;      // Total amount to be paid
-    private boolean isPaid;          // Payment status (true if paid, false otherwise)
-    private String deliveryAddress; // Delivery address
-    private String paymentMethod;   // Payment method (e.g., CARD, CASH)
+    private String customerId;
+    private String mealId;
+    private double totalAmount;
+    private boolean isPaid;
+    private String deliveryAddress;
+    private String paymentMethod;
 
     // Getters and setters
-
-    public String getId() {
-        return id;
-    }
 
     public void setId(String id) {
         this.id = id;
