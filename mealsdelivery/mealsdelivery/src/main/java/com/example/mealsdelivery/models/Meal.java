@@ -1,6 +1,5 @@
 package com.example.mealsdelivery.models;
 
-import lombok.Getter;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.annotation.Id;
 

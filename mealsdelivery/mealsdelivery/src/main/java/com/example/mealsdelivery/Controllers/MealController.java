@@ -1,7 +1,6 @@
 package com.example.mealsdelivery.Controllers;
 
 import com.example.mealsdelivery.Service.MealService;
-import com.example.mealsdelivery.models.Customer;
 import com.example.mealsdelivery.models.Meal;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
