@@ -1,6 +1,5 @@
 package com.example.mealsdelivery.Service;
 
-import com.example.mealsdelivery.models.Meal;
 import org.springframework.stereotype.Service;
 
 import com.example.mealsdelivery.Repository.OrderRepository;
