@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="115d7b8c-6a9a-476e-b684-ee292e6dc6a6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/Controllers/MealController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/Controllers/MealController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/Controllers/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/Controllers/ReviewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/models/Meal.java" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/models/Meal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/models/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/models/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/Controllers/MealController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/Controllers/MealController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/Controllers/ReviewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/Controllers/ReviewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/models/Meal.class" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/models/Meal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/models/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/models/Order.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sandu456&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Asangiime/MealPlan.git&quot;,
+    &quot;accountId&quot;: &quot;a33b3af6-487e-43de-bdbb-abff5b4143fa&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2rEthtSmnyZoImcecrcJFgIEVim" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.MealsdeliveryApplication.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "sandu__new",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Sandu/recipe-sharing-system/Backend/MealPlan-6"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="115d7b8c-6a9a-476e-b684-ee292e6dc6a6" name="Changes" comment="" />
+      <created>1736136184828</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736136184828</updated>
+    </task>
+    <servers />
+  </component>
+</project>

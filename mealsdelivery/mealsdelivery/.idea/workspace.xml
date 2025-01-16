@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="346403c4-398d-4830-ac6d-14d7c2047bbd" name="Changes" comment="update url for retrieve orders">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mealsdelivery/Controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mealsdelivery/Controllers/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mealsdelivery/Repository/AdminRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mealsdelivery/Repository/AdminRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mealsdelivery/Service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mealsdelivery/Service/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mealsdelivery/models/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mealsdelivery/models/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mealsdelivery/models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mealsdelivery/models/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mealsdelivery/models/Meal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mealsdelivery/models/Meal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mealsdelivery/models/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mealsdelivery/models/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mealsdelivery/models/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/mealsdelivery/models/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sandu456&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Asangiime/MealPlan.git&quot;,
+    &quot;accountId&quot;: &quot;a33b3af6-487e-43de-bdbb-abff5b4143fa&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2r4JIZSFDvapwUB7qeNUmGCKZfc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.MealsdeliveryApplication.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "#20 on sandu",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Sandu/recipe-sharing-system/Backend/MealPlan-6"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.mealsdelivery.models" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="346403c4-398d-4830-ac6d-14d7c2047bbd" name="Changes" comment="" />
+      <created>1735812337471</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1735812337471</updated>
+    </task>
+    <task id="LOCAL-00001" summary="add method to retrieve all customers">
+      <option name="closed" value="true" />
+      <created>1735878595237</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1735878595237</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added method to retrieve all customers">
+      <option name="closed" value="true" />
+      <created>1735878772637</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1735878772637</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added method to save a meal">
+      <option name="closed" value="true" />
+      <created>1735884391250</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1735884391250</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update findAllMeal method">
+      <option name="closed" value="true" />
+      <created>1735889462132</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1735889462133</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add methods">
+      <option name="closed" value="true" />
+      <created>1735890768861</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1735890768861</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added update order option">
+      <option name="closed" value="true" />
+      <created>1735961886247</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1735961886247</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added update,delete,create reviews option">
+      <option name="closed" value="true" />
+      <created>1735971933946</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1735971933947</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update url for retrieve orders">
+      <option name="closed" value="true" />
+      <created>1735979178480</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1735979178480</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add method to retrieve all customers" />
+    <MESSAGE value="added method to retrieve all customers" />
+    <MESSAGE value="added method to save a meal" />
+    <MESSAGE value="update findAllMeal method" />
+    <MESSAGE value="add methods" />
+    <MESSAGE value="added update order option" />
+    <MESSAGE value="added update,delete,create reviews option" />
+    <MESSAGE value="update url for retrieve orders" />
+    <option name="LAST_COMMIT_MESSAGE" value="update url for retrieve orders" />
+  </component>
+</project>
