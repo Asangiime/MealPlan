@@ -1,6 +1,6 @@
 package com.example.mealsdelivery.Service;
 
-
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.mealsdelivery.Repository.OrderRepository;
@@ -14,7 +14,6 @@ public class OrderService {
 
     private final OrderRepository orderRepository;
 
-    @Autowired
     public OrderService(OrderRepository orderRepository) {
         this.orderRepository = orderRepository;
     }
