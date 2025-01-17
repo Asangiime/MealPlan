@@ -33,7 +33,7 @@ import com.example.mealsdelivery.models.Customer;
     public List<Customer> getAllCustomers() {
         return customerService.getAllCustomers();
     }
-        @GetMapping("/{id}")
+        @GetMapping("/get/{id}")
             public Optional<Customer> getCustomer(@PathVariable String id){
                 return customerService.getCustomerById(id);
             }
