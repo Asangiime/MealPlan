@@ -7,10 +7,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Review {
     @Id
     private String id;
-    private String customerId; // Reference to Customer
-    private String mealId;     // Reference to Meal (optional if needed for association)
-    private String comment;    // Review comment
-    private int rating;        // Rating (e.g., out of 5)
+    private String customerId; 
+    private String mealId;     
+    private String comment;    
+    private int rating;        
 
     // Getters and setters
 
