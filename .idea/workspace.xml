@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="115d7b8c-6a9a-476e-b684-ee292e6dc6a6" name="Changes" comment="add security dependency">
+    <list default="true" id="115d7b8c-6a9a-476e-b684-ee292e6dc6a6" name="Changes" comment="avoid .and() method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/Config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/Config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/Config/SecurityConfig.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,12 +89,21 @@
       <option name="project" value="LOCAL" />
       <updated>1737183440190</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="avoid .and() method">
+      <option name="closed" value="true" />
+      <created>1737185182976</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1737185182976</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add bean def for passwordEncoder" />
     <MESSAGE value="add security dependency" />
-    <option name="LAST_COMMIT_MESSAGE" value="add security dependency" />
+    <MESSAGE value="avoid .and() method" />
+    <option name="LAST_COMMIT_MESSAGE" value="avoid .and() method" />
   </component>
 </project>

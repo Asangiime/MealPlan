@@ -30,7 +30,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests()
                 .requestMatchers("/admin/**").hasRole("ADMIN")  // Protect admin routes
                 .anyRequest().permitAll()  // Allow all other requests
-                .userDetailsService(adminService)  // Use adminService as UserDetailsService
+                .and()  // Use adminService as UserDetailsService
                 .httpBasic();  // Basic Authentication
 
         return http.build();
@@ -38,9 +38,9 @@ public class SecurityConfig {
 
     @Bean
     public AuthenticationManager authenticationManager(HttpSecurity http) throws Exception {
-        return http.getSharedObject(AuthenticationManagerBuilder.class)
-                .userDetailsService(adminService)  // Use adminService as UserDetailsService
-                .passwordEncoder(passwordEncoder())  // Reference the passwordEncoder() method
-                .build();
+        AuthenticationManagerBuilder authenticationManagerBuilder = http.getSharedObject(AuthenticationManagerBuilder.class);
+        authenticationManagerBuilder.userDetailsService(adminService)
+                .passwordEncoder(passwordEncoder());
+        return authenticationManagerBuilder.build();
     }
 }
