@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="115d7b8c-6a9a-476e-b684-ee292e6dc6a6" name="Changes" comment="avoid .and() method">
+    <list default="true" id="115d7b8c-6a9a-476e-b684-ee292e6dc6a6" name="Changes" comment="added authentication manager buider">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/Config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/Config/SecurityConfig.java" afterDir="false" />
     </list>
@@ -97,13 +97,22 @@
       <option name="project" value="LOCAL" />
       <updated>1737185182976</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added authentication manager buider">
+      <option name="closed" value="true" />
+      <created>1737185723594</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1737185723594</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add bean def for passwordEncoder" />
     <MESSAGE value="add security dependency" />
     <MESSAGE value="avoid .and() method" />
-    <option name="LAST_COMMIT_MESSAGE" value="avoid .and() method" />
+    <MESSAGE value="added authentication manager buider" />
+    <option name="LAST_COMMIT_MESSAGE" value="added authentication manager buider" />
   </component>
 </project>

@@ -3,6 +3,7 @@ package com.example.mealsdelivery.Config;
 import com.example.mealsdelivery.Service.AdminService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -15,7 +16,7 @@ public class SecurityConfig {
 
     private final AdminService adminService;
 
-    public SecurityConfig(AdminService adminService) {
+    public SecurityConfig(@Lazy AdminService adminService) {
         this.adminService = adminService;
     }
 
