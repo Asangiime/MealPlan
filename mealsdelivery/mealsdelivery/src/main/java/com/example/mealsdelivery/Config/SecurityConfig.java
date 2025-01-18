@@ -15,8 +15,10 @@ public class SecurityConfig {
 
     private final AdminService adminService;
 
+
     public SecurityConfig(AdminService adminService) {
         this.adminService = adminService;
+
     }
 
     @Bean
@@ -26,12 +28,13 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http.csrf(csrf -> csrf.disable())
-            .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/admin/**").hasRole("ADMIN")
-                .anyRequest().permitAll()
-            )
-            .httpBasic();
+        http.csrf.disable()
+                .authorizeHttpRequests()
+                        .antMatchers("/admin/**").hasRole("ADMIN")
+                        .anyRequest().permitAll()
+                .and()
+                .adminService(adminService)
+                .httpBasic();
 
         return http.build();
     }
@@ -39,9 +42,12 @@ public class SecurityConfig {
     @Bean
     public AuthenticationManager authenticationManager(HttpSecurity http) throws Exception {
         return http.getSharedObject(AuthenticationManagerBuilder.class)
-                   .userDetailsService(adminService)
-                   .passwordEncoder(passwordEncoder())
-                   .and()
-                   .build();
+                .userDetailsService(adminService)
+                .passwordEncoder(passwordEncoder)
+                .and()
+                .build();
     }
+
+
+
 }
