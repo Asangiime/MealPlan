@@ -16,7 +16,7 @@ public class SecurityConfig {
 
     private final AdminService adminService;
 
-    public SecurityConfig(@Lazy AdminService adminService) {
+    public SecurityConfig( AdminService adminService) {
         this.adminService = adminService;
     }
 
@@ -28,10 +28,9 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.csrf().disable()  // Correct way to disable CSRF
-                .authorizeHttpRequests()
+                .authorizeHttpRequests(auth -> auth
                 .requestMatchers("/admin/**").hasRole("ADMIN")  // Protect admin routes
-                .anyRequest().permitAll()  // Allow all other requests
-                .and()  // Use adminService as UserDetailsService
+                .anyRequest().permitAll() ) // Allow all other requests// Use adminService as UserDetailsService
                 .httpBasic();  // Basic Authentication
 
         return http.build();
