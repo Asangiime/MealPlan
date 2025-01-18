@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="115d7b8c-6a9a-476e-b684-ee292e6dc6a6" name="Changes" comment="added authentication manager buider">
+    <list default="true" id="115d7b8c-6a9a-476e-b684-ee292e6dc6a6" name="Changes" comment="avoid @Lazy annotation &amp; added authorize http req">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/Config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/Config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/Config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/Config/SecurityConfig.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +105,23 @@
       <option name="project" value="LOCAL" />
       <updated>1737185723594</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added @Lazy annotation">
+      <option name="closed" value="true" />
+      <created>1737186206361</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1737186206362</updated>
+    </task>
+    <task id="LOCAL-00007" summary="avoid @Lazy annotation &amp; added authorize http req">
+      <option name="closed" value="true" />
+      <created>1737187075722</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1737187075722</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -113,6 +129,8 @@
     <MESSAGE value="add security dependency" />
     <MESSAGE value="avoid .and() method" />
     <MESSAGE value="added authentication manager buider" />
-    <option name="LAST_COMMIT_MESSAGE" value="added authentication manager buider" />
+    <MESSAGE value="added @Lazy annotation" />
+    <MESSAGE value="avoid @Lazy annotation &amp; added authorize http req" />
+    <option name="LAST_COMMIT_MESSAGE" value="avoid @Lazy annotation &amp; added authorize http req" />
   </component>
 </project>
