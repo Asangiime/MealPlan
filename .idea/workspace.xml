@@ -5,19 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="115d7b8c-6a9a-476e-b684-ee292e6dc6a6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/Controllers/MealController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/Controllers/MealController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/Controllers/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/Controllers/ReviewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/models/Meal.java" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/models/Meal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/models/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/models/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/Controllers/MealController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/Controllers/MealController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/Controllers/ReviewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/Controllers/ReviewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/models/Meal.class" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/models/Meal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/models/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/models/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/Config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/Config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/models/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/models/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/Controllers/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/Controllers/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/Repository/AdminRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/Repository/AdminRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/Service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/Service/AdminService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/models/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/models/Admin.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,6 +41,9 @@
     &quot;accountId&quot;: &quot;a33b3af6-487e-43de-bdbb-abff5b4143fa&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -46,7 +56,8 @@
   "keyToString": {
     "Application.MealsdeliveryApplication.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "sandu__new",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Sandu/recipe-sharing-system/Backend/MealPlan-6"
   }
