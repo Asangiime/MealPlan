@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="115d7b8c-6a9a-476e-b684-ee292e6dc6a6" name="Changes" comment="">
+    <list default="true" id="115d7b8c-6a9a-476e-b684-ee292e6dc6a6" name="Changes" comment="add security dependency">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/Config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/Config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/models/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/src/main/java/com/example/mealsdelivery/models/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/Controllers/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/Controllers/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/Repository/AdminRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/Repository/AdminRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/Service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/Service/AdminService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/models/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/models/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mealsdelivery/mealsdelivery/target/classes/com/example/mealsdelivery/Config/SecurityConfig.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +66,36 @@
       <option name="presentableId" value="Default" />
       <updated>1736136184828</updated>
     </task>
+    <task id="LOCAL-00001" summary="add bean def for passwordEncoder">
+      <option name="closed" value="true" />
+      <created>1737183319793</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737183319793</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add bean def for passwordEncoder">
+      <option name="closed" value="true" />
+      <created>1737183400347</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737183400347</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add security dependency">
+      <option name="closed" value="true" />
+      <created>1737183440190</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1737183440190</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add bean def for passwordEncoder" />
+    <MESSAGE value="add security dependency" />
+    <option name="LAST_COMMIT_MESSAGE" value="add security dependency" />
   </component>
 </project>
