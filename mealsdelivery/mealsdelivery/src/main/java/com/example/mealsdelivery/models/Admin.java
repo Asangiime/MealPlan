@@ -8,8 +8,8 @@ public class Admin {
    @Id
    private String id;
    private String username;
-   private String password; 
-   private String role;     
+   private String password;
+   private String role;
 
    // Getters and setters
    public String getId(){
