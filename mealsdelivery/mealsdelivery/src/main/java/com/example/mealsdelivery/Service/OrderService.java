@@ -1,6 +1,5 @@
 package com.example.mealsdelivery.Service;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.mealsdelivery.Repository.OrderRepository;

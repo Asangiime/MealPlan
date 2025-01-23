@@ -2,7 +2,6 @@ package com.example.mealsdelivery.Service;
 
 import com.example.mealsdelivery.models.Admin;
 import com.example.mealsdelivery.Repository.AdminRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -18,7 +17,6 @@ public class AdminService implements UserDetailsService {
     private final AdminRepository adminRepository;
     private final PasswordEncoder passwordEncoder;
 
-    @Autowired
     public AdminService(AdminRepository adminRepository, PasswordEncoder passwordEncoder) {
         this.adminRepository = adminRepository;
         this.passwordEncoder = passwordEncoder;
