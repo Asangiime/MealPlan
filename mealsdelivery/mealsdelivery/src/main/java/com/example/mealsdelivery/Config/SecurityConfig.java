@@ -27,12 +27,11 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http.csrf().disable()  // Correct way to disable CSRF
+        http.csrf().disable()  
                 .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/admin/**").hasRole("ADMIN")  // Protect admin routes
-                .anyRequest().permitAll() ) // Allow all other requests// Use adminService as UserDetailsService
-                .httpBasic();  // Basic Authentication
-
+                .requestMatchers("/admin/**").hasRole("ADMIN") 
+                .anyRequest().permitAll() ) 
+                .httpBasic();  
         return http.build();
     }
 
