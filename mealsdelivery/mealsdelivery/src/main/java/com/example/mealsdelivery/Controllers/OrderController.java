@@ -3,6 +3,7 @@ package com.example.mealsdelivery.Controllers;
 import com.example.mealsdelivery.Service.OrderService;
 import com.example.mealsdelivery.models.Order;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -20,6 +21,7 @@ public class OrderController {
     }
 
     @GetMapping("/{id}")
+    @PreAuthorize("hasRole('ADMIN')")
     public Optional<Order> getOrderById(@PathVariable String id) {
         return orderService.getOrderById(id);
     }
@@ -30,6 +32,7 @@ public class OrderController {
     }
 
     @GetMapping("/get")
+    @PreAuthorize("hasRole('ADMIN')")
     public List<Order> getAllOrders() {
         return orderService.getAllOrders();
     }

@@ -4,6 +4,7 @@ package com.example.mealsdelivery.Controllers;
 import com.example.mealsdelivery.Service.ReviewService;
 import com.example.mealsdelivery.models.Review;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,6 +18,7 @@ public class ReviewController {
     private ReviewService reviewService;
 
     @PostMapping("/create")
+    @PreAuthorize("hasRole('CUSTOMER')")
     public Review addReview(@RequestBody Review review) {
         return reviewService.addReview(review);
     }
@@ -40,11 +42,13 @@ public class ReviewController {
 
 
     @PutMapping("/{id}")
+    @PreAuthorize("hasRole('CUSTOMER')")
     public Review updateReview(@PathVariable String id, @RequestBody Review review){
         return reviewService.updateReview(id,review);
     }
 
     @DeleteMapping("/{id}")
+    @PreAuthorize("hasRole('CUSTOMER')")
     public String deleteReview(@PathVariable String id) {
         reviewService.deleteReview(id);
         return "Review with ID " + id + " has been deleted.";

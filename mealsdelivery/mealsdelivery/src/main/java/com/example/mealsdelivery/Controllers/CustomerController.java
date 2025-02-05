@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -30,10 +31,12 @@ import com.example.mealsdelivery.models.Customer;
     }
 
     @GetMapping
+    @PreAuthorize("hasRole('ADMIN')")
     public List<Customer> getAllCustomers() {
         return customerService.getAllCustomers();
     }
         @GetMapping("/get/{id}")
+        @PreAuthorize("hasRole('ADMIN')")
             public Optional<Customer> getCustomer(@PathVariable String id){
                 return customerService.getCustomerById(id);
             }

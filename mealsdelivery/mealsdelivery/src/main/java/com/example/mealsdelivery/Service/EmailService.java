@@ -6,6 +6,9 @@ import com.example.mealsdelivery.Repository.CustomerRepository;
 import com.example.mealsdelivery.models.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mapping.MappingException;
+import org.springframework.mail.MailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -31,11 +34,11 @@ public class EmailService {
         Customer customer = customerOpt.get();
 
         // Create a MimeMessage for the email
-        MimeMessage mimeMessage = javaMailSender.createMimeMessage();
+        MailMessage mimeMessage = javaMailSender.createMimeMessage();
         MimeMessageHelper messageHelper = new MimeMessageHelper(mimeMessage, true); // 'true' means multipart
 
         // Set the email properties
-        messageHelper.setFrom("your-email@example.com"); // You can still set this as a fixed sender if needed
+        messageHelper.setFrom("sadupama456@gmail.com"); // You can still set this as a fixed sender if needed
         messageHelper.setTo(customer.getEmail()); // Automatically send to the customer's email
         messageHelper.setSubject("Your Requested Recipe Card");
         messageHelper.setText(recipeDetails); // Recipe details (can be PDF or plain text)
