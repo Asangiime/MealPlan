@@ -47,6 +47,9 @@ public class OrderService {
         orderRepository.deleteById(id);
     }
 
+    public boolean hasPurchasedMeal(String customerId, String mealId) {
+        return orderRepository.existsByCustomerIdAndMealId(customerId, mealId);
+    }
 
 }
 

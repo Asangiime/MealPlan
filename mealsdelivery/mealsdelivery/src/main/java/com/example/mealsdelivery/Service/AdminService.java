@@ -8,7 +8,6 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
 import java.util.Optional;
 
 @Service
@@ -16,6 +15,7 @@ public class AdminService implements UserDetailsService {
 
     private final AdminRepository adminRepository;
     private final PasswordEncoder passwordEncoder;
+    
 
     public AdminService(AdminRepository adminRepository, PasswordEncoder passwordEncoder) {
         this.adminRepository = adminRepository;
@@ -43,4 +43,6 @@ public class AdminService implements UserDetailsService {
                 .roles(admin.getRole()) // Assumes role is a String like "ADMIN"
                 .build();
     }
+
+    
 }
