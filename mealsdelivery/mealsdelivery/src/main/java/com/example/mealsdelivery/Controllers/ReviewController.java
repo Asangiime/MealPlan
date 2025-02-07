@@ -48,8 +48,8 @@ public class ReviewController {
     }
 
     @DeleteMapping("/{id}")
-    @PreAuthorize("hasRole('CUSTOMER')")
-    public String deleteReview(@PathVariable String id) {
+    @PreAuthorize("hasRole('CUSTOMER') or hasRole('ADMIN')")
+   public String deleteReview(@PathVariable String id) {
         reviewService.deleteReview(id);
         return "Review with ID " + id + " has been deleted.";
     }

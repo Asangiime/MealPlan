@@ -9,6 +9,18 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
+
+
+
+
+
+
+
+
+
+
+
+
 @RestController
 @RequestMapping("/orders")
 public class OrderController {
@@ -16,6 +28,7 @@ public class OrderController {
     private OrderService orderService;
 
     @PostMapping("/create")
+    @PreAuthorize("hasRole('CUSTOMER')")
     public Order createOrder(@RequestBody Order order) {
         return orderService.createOrder(order);
     }
@@ -27,6 +40,7 @@ public class OrderController {
     }
 
     @GetMapping("/customers/{customerId}")
+    @PreAuthorize("hasRole('ADMIN') or hasRole('CUSTOMER')")
     public List<Order> getOrdersByCustomerId(@PathVariable String customerId) {
         return orderService.getOrdersByCustomerId(customerId);
     }

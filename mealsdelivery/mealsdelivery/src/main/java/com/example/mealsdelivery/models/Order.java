@@ -14,9 +14,9 @@ public class Order {
     private String customerId;
     private String mealId;
     private double totalAmount;
-    private boolean isPaid;
     private String deliveryAddress;
     private String paymentMethod;
+    private double paymentAmount;
 
     // Getters and setters
 
@@ -48,12 +48,12 @@ public class Order {
         this.totalAmount = totalAmount;
     }
 
-    public boolean isPaid() {
-        return isPaid;
+    public double getPaymentAmount() {
+        return paymentAmount;
     }
 
-    public void setPaid(boolean isPaid) {
-        this.isPaid = isPaid;
+    public void setPaymentAmount(double paymentAmount) {
+        this.paymentAmount = paymentAmount;
     }
 
     public String getDeliveryAddress() {

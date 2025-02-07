@@ -2,7 +2,9 @@ package com.example.mealsdelivery.Service;
 
 import org.springframework.stereotype.Service;
 
+import com.example.mealsdelivery.Repository.MealRepository;
 import com.example.mealsdelivery.Repository.OrderRepository;
+import com.example.mealsdelivery.models.Meal;
 import com.example.mealsdelivery.models.Order;
 
 import java.util.List;
@@ -12,12 +14,25 @@ import java.util.Optional;
 public class OrderService {
 
     private final OrderRepository orderRepository;
+    private final MealRepository mealRepository;
 
-    public OrderService(OrderRepository orderRepository) {
+    public OrderService(OrderRepository orderRepository,MealRepository mealRepository) {
         this.orderRepository = orderRepository;
+        this.mealRepository=mealRepository;
     }
 
+    
     public Order createOrder(Order order) {
+        Optional<Meal> mealOpt = mealRepository.findById(order.getMealId());
+
+        if (mealOpt.isEmpty()) {
+            throw new IllegalArgumentException("Meal not found for ID: " + order.getMealId());
+        }
+
+        Meal meal = mealOpt.get();
+        double totalAmount = meal.getPrice() * order.getTotalAmount();  // Calculate price
+
+        order.setPaymentAmount(totalAmount);  // Set calculated payment
         return orderRepository.save(order);
     }
 
@@ -35,13 +50,21 @@ public class OrderService {
 
     public Order updateOrder(String id, Order order) {
         if (orderRepository.existsById(id)) {
-        order.setId(id);
-        return orderRepository.save(order);
+            Optional<Meal> mealOpt = mealRepository.findById(order.getMealId());
+
+            if (mealOpt.isEmpty()) {
+                throw new IllegalArgumentException("Meal not found for ID: " + order.getMealId());
+            }
+
+            double updatedAmount = mealOpt.get().getPrice() * order.getTotalAmount();
+            order.setPaymentAmount(updatedAmount);  // Recalculate amount on update
+
+            order.setId(id);
+            return orderRepository.save(order);
+        } else {
+            throw new IllegalArgumentException("Order with ID " + id + " does not exist.");
+        }
     }
-    else {
-        throw new IllegalArgumentException("Order with ID " + id + " does not exist.");
-    }
-}
 
     public void deleteOrder(String id) {
         orderRepository.deleteById(id);

@@ -23,7 +23,6 @@ public class MealController {
     }
 
     @GetMapping("/get")
-    @PreAuthorize("hasRole('ADMIN')")
     public List<Meal> getAllMeals() {
         return mealService.getAllMeals();
 
